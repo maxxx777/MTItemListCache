@@ -14,13 +14,15 @@ It is convenient to use **MTItemListCacheInterface.h** with `UICollectionViewDat
 
 **MTItemListCacheDelegate.h** enables to subscribe for change content of `NSFetchedResultsController` (it can be used only with **MTFetchedResultsControllerBasedItemListCache**).
 
-**Usage**
+Usage
+====================
 
 Copy files from repository into your project and include `MTArrayBasedItemListCache.h` or `MTFetchedResultsControllerBasedItemListCache.h`.
 
-**Description**
+Description
+====================
 
-*MTItemListCacheInterface.h*
+**MTItemListCacheInterface.h**
 
 ```objective-c
 - (NSArray *)allCachedItems
@@ -76,7 +78,7 @@ return section index title for given section name in the list of cached objects
 
 return header title for given section in the list of cached objects
 
-*MTArrayBasedItemListCacheInterface.h*
+**MTArrayBasedItemListCacheInterface.h**
 
 ```objective-c
 - (void)cacheItemListWithSourceObjects:(NSArray *)sourceObjects
@@ -86,7 +88,7 @@ return header title for given section in the list of cached objects
 
 cache given objects with predicate and comletion handler block
 
-*MTFetchedResultsControllerBasedItemListCacheInterface.h*
+**MTFetchedResultsControllerBasedItemListCacheInterface.h**
 
 ```objective-c
 - (void)cacheItemListWithEntityName:(NSString *)entityName
@@ -125,7 +127,7 @@ cache objects with given entity name, sorted descriptors, predicate, section nam
 
 cache objects with given entity name, sorted descriptors, predicate, section name key path, include/not include subentities, cache name, update/not update cache, context and comletion handler block
 
-*MTItemListCacheDelegate.h*
+**MTItemListCacheDelegate.h**
 
 ```objective-c
 - (void)onDidChangeContent

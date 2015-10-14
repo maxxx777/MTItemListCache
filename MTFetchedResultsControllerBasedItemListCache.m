@@ -27,6 +27,11 @@
     return self;
 }
 
+- (instancetype)init
+{
+    return [self initWithDelegate:nil];
+}
+
 - (void)dealloc
 {
     DLog(@"%@ deallocated: %p", NSStringFromClass([self class]), self);

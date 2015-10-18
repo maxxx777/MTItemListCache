@@ -39,7 +39,7 @@
     }
     @finally {
         if (!success) {
-//            DLog(@"cache items error");
+            //FIXME: configure NSError (cache items error)
         }
         
         if (completionBlock) {

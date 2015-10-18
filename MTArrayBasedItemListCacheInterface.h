@@ -9,8 +9,8 @@
 
 @protocol MTArrayBasedItemListCacheInterface <NSObject, MTItemListCacheInterface>
 
-- (void)cacheItemListWithSourceObjects:(NSArray *)sourceObjects
-                             predicate:(NSPredicate *)predicate
+- (void)cacheItemListWithSourceObjects:(NSArray * _Nonnull)sourceObjects
+                             predicate:(NSPredicate * _Nullable)predicate
                             completion:(MTItemListCacheCompletionBlock)completionBlock;
 
 @end

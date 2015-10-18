@@ -11,14 +11,14 @@
 - (NSArray *)allCachedItems;
 - (NSUInteger)numberOfAllCachedItems;
 
-- (id)objectAtIndexPath:(NSIndexPath *)indexPath;
-- (NSIndexPath *)indexPathForObject:(id)object;
+- (id)objectAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSIndexPath *)indexPathForObject:(id _Nonnull)object;
 
 - (NSUInteger)numberOfSections;
 - (NSUInteger)numberOfRowsInSection:(NSInteger)section;
 
 - (NSArray *)sectionIndexTitles;
-- (NSString *)sectionIndexTitleForSectionName:(NSString *)sectionName;
+- (NSString *)sectionIndexTitleForSectionName:(NSString * _Nullable)sectionName;
 
 - (NSString *)titleForHeaderInSection:(NSInteger)section;
 

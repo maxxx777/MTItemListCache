@@ -9,27 +9,27 @@
 
 @protocol MTFetchedResultsControllerBasedItemListCacheInterface <NSObject, MTItemListCacheInterface>
 
-- (void)cacheItemListWithEntityName:(NSString *)entityName
-                    sortDescriptors:(NSArray *)sortDescriptors
-                          predicate:(NSPredicate *)predicate
-                 sectionNameKeyPath:(NSString *)sectionNameKeyPath
-                            context:(NSManagedObjectContext *)context
+- (void)cacheItemListWithEntityName:(NSString * _Nonnull)entityName
+                    sortDescriptors:(NSArray * _Nullable)sortDescriptors
+                          predicate:(NSPredicate * _Nullable)predicate
+                 sectionNameKeyPath:(NSString * _Nullable)sectionNameKeyPath
+                            context:(NSManagedObjectContext * _Nonnull)context
                          completion:(MTItemListCacheCompletionBlock)completionBlock;
-- (void)cacheItemListWithEntityName:(NSString *)entityName
-                    sortDescriptors:(NSArray *)sortDescriptors
-                          predicate:(NSPredicate *)predicate
-                 sectionNameKeyPath:(NSString *)sectionNameKeyPath
+- (void)cacheItemListWithEntityName:(NSString * _Nonnull)entityName
+                    sortDescriptors:(NSArray * _Nullable)sortDescriptors
+                          predicate:(NSPredicate * _Nullable)predicate
+                 sectionNameKeyPath:(NSString * _Nullable)sectionNameKeyPath
                 includesSubentities:(BOOL)includesSubentities
-                            context:(NSManagedObjectContext *)context
+                            context:(NSManagedObjectContext * _Nonnull)context
                          completion:(MTItemListCacheCompletionBlock)completionBlock;
-- (void)cacheItemListWithEntityName:(NSString *)entityName
-                    sortDescriptors:(NSArray *)sortDescriptors
-                          predicate:(NSPredicate *)predicate
-                 sectionNameKeyPath:(NSString *)sectionNameKeyPath
+- (void)cacheItemListWithEntityName:(NSString * _Nonnull)entityName
+                    sortDescriptors:(NSArray * _Nullable)sortDescriptors
+                          predicate:(NSPredicate * _Nullable)predicate
+                 sectionNameKeyPath:(NSString * _Nullable)sectionNameKeyPath
                 includesSubentities:(BOOL)includesSubentities
-                          cacheName:(NSString*)cacheName
+                          cacheName:(NSString * _Nullable)cacheName
                         updateCache:(BOOL)updateCache
-                            context:(NSManagedObjectContext *)context
+                            context:(NSManagedObjectContext * _Nonnull)context
                          completion:(MTItemListCacheCompletionBlock)completionBlock;
 
 @end

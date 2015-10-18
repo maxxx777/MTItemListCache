@@ -91,7 +91,9 @@
     @try {
         
         if (updateCache) {
-            [NSFetchedResultsController deleteCacheWithName:cacheName];
+            if (cacheName) {
+                [NSFetchedResultsController deleteCacheWithName:cacheName];
+            }
         }
         
         _fetchedResultsController.delegate = nil;

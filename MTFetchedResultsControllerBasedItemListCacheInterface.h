@@ -14,14 +14,14 @@
                           predicate:(NSPredicate * _Nullable)predicate
                  sectionNameKeyPath:(NSString * _Nullable)sectionNameKeyPath
                             context:(NSManagedObjectContext * _Nonnull)context
-                         completion:(MTItemListCacheCompletionBlock)completionBlock;
+                         completion:(MTItemListCacheCompletionBlock _Nullable)completionBlock;
 - (void)cacheItemListWithEntityName:(NSString * _Nonnull)entityName
                     sortDescriptors:(NSArray * _Nullable)sortDescriptors
                           predicate:(NSPredicate * _Nullable)predicate
                  sectionNameKeyPath:(NSString * _Nullable)sectionNameKeyPath
                 includesSubentities:(BOOL)includesSubentities
                             context:(NSManagedObjectContext * _Nonnull)context
-                         completion:(MTItemListCacheCompletionBlock)completionBlock;
+                         completion:(MTItemListCacheCompletionBlock _Nullable)completionBlock;
 - (void)cacheItemListWithEntityName:(NSString * _Nonnull)entityName
                     sortDescriptors:(NSArray * _Nullable)sortDescriptors
                           predicate:(NSPredicate * _Nullable)predicate
@@ -30,6 +30,6 @@
                           cacheName:(NSString * _Nullable)cacheName
                         updateCache:(BOOL)updateCache
                             context:(NSManagedObjectContext * _Nonnull)context
-                         completion:(MTItemListCacheCompletionBlock)completionBlock;
+                         completion:(MTItemListCacheCompletionBlock _Nullable)completionBlock;
 
 @end

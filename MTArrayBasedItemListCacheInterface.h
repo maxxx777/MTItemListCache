@@ -11,6 +11,6 @@
 
 - (void)cacheItemListWithSourceObjects:(NSArray * _Nonnull)sourceObjects
                              predicate:(NSPredicate * _Nullable)predicate
-                            completion:(MTItemListCacheCompletionBlock)completionBlock;
+                            completion:(MTItemListCacheCompletionBlock _Nullable)completionBlock;
 
 @end

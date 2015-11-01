@@ -8,18 +8,18 @@
 
 @protocol MTItemListCacheInterface <NSObject>
 
-- (NSArray *)allCachedItems;
+- (NSArray * _Nullable)allCachedItems;
 - (NSUInteger)numberOfAllCachedItems;
 
-- (id)objectAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (NSIndexPath *)indexPathForObject:(id _Nonnull)object;
+- (id _Nullable)objectAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSIndexPath * _Nullable)indexPathForObject:(id _Nonnull)object;
 
 - (NSUInteger)numberOfSections;
 - (NSUInteger)numberOfRowsInSection:(NSInteger)section;
 
-- (NSArray *)sectionIndexTitles;
-- (NSString *)sectionIndexTitleForSectionName:(NSString * _Nullable)sectionName;
+- (NSArray * _Nullable)sectionIndexTitles;
+- (NSString * _Nullable)sectionIndexTitleForSectionName:(NSString * _Nullable)sectionName;
 
-- (NSString *)titleForHeaderInSection:(NSInteger)section;
+- (NSString * _Nullable)titleForHeaderInSection:(NSInteger)section;
 
 @end
